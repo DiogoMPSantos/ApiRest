@@ -1,3 +1,26 @@
+
+# Nextem
+
+Projeto para avaliação de vaga de Desenvolvedor JR
+
+# Instalar Dependências do Projeto
+
+composer install
+
+# Configurar Variáveis de Ambiente
+
+cp .env.example .env 
+php artisan key:generate
+
+# Criar Banco e Enviar os Dados das Seeders
+
+php artisan migrate --seed
+
+# Usuário e Senha
+
+email: teste@nextem.com.br
+senha: 1234
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
@@ -76,6 +99,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# nextem
 
-Projeto para avaliação de vaga de Desenvolvedor JR
