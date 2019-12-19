@@ -13,7 +13,7 @@ class RegisterFormRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -28,6 +28,18 @@ class RegisterFormRequest extends FormRequest
             'name' => 'required|string',
             'email' => 'required|email|unique:users',
             'password' => 'required|string|min:5|max:8'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            //
+            'name.requires' => 'O campo nome é obrigatório',
+            'email.required' => 'O campo email é obrigatório',
+            'password.required' => 'O campo Senha é obrigatório|min:5|max:8',
+            'password.min' => 'A senha deve possuir no mínimo 5 caracteres',
+            'password.max' => 'A senha deve possuir no máximo 8 caracteres'
         ];
     }
 }

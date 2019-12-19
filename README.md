@@ -23,7 +23,14 @@ senha: 1234
 
 # Rotas  da aplicação WEB
 (/) => url para para o login
-As demais rotas são acessadas via aplicação e links
+As demais rotas são acessadas por meio de botões e links nas próximas páginas
+
+# Rotas  da aplicação WEB
+(/api/login) => url para para o login na aplicação
+(/api/register) => url para para cadastrar novo usuário (Name, Email, Password, Password_Confirmation)
+(/api/projects) => Retorna Todos os Projetos Cadastrados
+(/api/users) => Retorna Dados do Usuário Autenticado
+
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 

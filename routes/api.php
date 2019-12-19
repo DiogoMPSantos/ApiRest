@@ -13,6 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::post('register', 'UserController@register');
+Route::post('login', 'UserController@authenticate');
+
+Route::group(['middleware' => ['throttle:60,1', 'jwt.verify']], function() {
+    Route::get('users', 'UserController@getAuthenticatedUser');
+    Route::get('projects', 'UserController@getProjects');
 });
