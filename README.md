@@ -25,7 +25,7 @@ senha: 1234
 (/) => url para para o login
 As demais rotas são acessadas por meio de botões e links nas próximas páginas
 
-# Rotas  da API
+# Rotas  da API - Informe Primeiro Cadastro em Seguida Login
 (/api/login) => url para para o login na aplicação
 (/api/register) => url para para cadastrar novo usuário (Name, Email, Password, Password_Confirmation)
 (/api/projects) => Retorna Todos os Projetos Cadastrados

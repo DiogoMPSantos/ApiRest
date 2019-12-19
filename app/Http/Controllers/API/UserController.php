@@ -9,7 +9,8 @@ use App\User;
     use Illuminate\Support\Facades\Validator;
     use JWTAuth;
     use App\Project;
-    use Tymon\JWTAuth\Exceptions\JWTException;
+use PHPUnit\Framework\MockObject\Builder\Match;
+use Tymon\JWTAuth\Exceptions\JWTException;
 
     class UserController extends Controller
     {
@@ -80,4 +81,25 @@ use App\User;
 
                     return response()->json(compact('user'));
             }
+
+            //Função Incompleta
+            // public function sendRequestToApi(Request $request)
+            // {
+            //     float $timeToResponse = null;
+ 
+            //     const sendRequestToApi = () => new Promise((resolve) => {
+            //       const time = $timeToResponse || parseInt(1000 * Math);
+            //       setTimeout(() => resolve({ time, fromApi: true }), time);
+            //     });
+                 
+            //     function sendRequestWithTimeout() {
+                 
+            //     }
+                 
+            //     sendRequestWithTimeout().then(data => {
+            //       console.log(data)
+            //     }).catch(err => {
+            //       console.log(err)
+            //     });
+            // }
     }
