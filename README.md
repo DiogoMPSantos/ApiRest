@@ -18,8 +18,12 @@ php artisan migrate --seed
 
 # Usuário e Senha
 
-email: teste@nextem.com.br
+email: test@nextem.com.br
 senha: 1234
+
+# Rotas  da aplicação WEB
+(/) => url para para o login
+As demais rotas são acessadas via aplicação e links
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
